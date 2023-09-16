@@ -5,6 +5,7 @@
 #include <stdlib.>
 #include <stdarg.h>
 #include <unistd.h>
+int pear(char c);
 int _printf(const char *format, ...);
 int pcar(char c);
 
