@@ -16,5 +16,6 @@ int _pu(char *st)
 		pear(*st++);
 	}
 	pear(10);
+
 	return (0);
 }
