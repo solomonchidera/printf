@@ -6,8 +6,8 @@
 #include <stdarg.h>
 #include <unistd.h>
 int _pu(*st);
-int pear(char c);
+int _putchar(char c);
 int _printf(const char *format, ...);
-
+int string_print(const char *format, ...);
 
 #endif
