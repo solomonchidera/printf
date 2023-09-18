@@ -24,17 +24,17 @@ int _printf(const char *format, ...)
 				_printf_s(va_arg(args, const char *), &char_count);
 			else if (*format == '%')
 			{
-				putchar('%');
+				_putchar('%');
 				char_count++;
 			} else
 			{
-				putchar('%');
-				putchar(*format);
+				_putchar('%');
+				_putchar(*format);
 				char_count += 2;
 			}
 		} else
 		{
-			putchar(*format);
+			_putchar(*format);
 			char_count++;
 		}
 		format++;
