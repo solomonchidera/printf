@@ -11,9 +11,9 @@ int main(void)
 {
 	
 
-	print_string("Let's try to printf a simple sentence.\n");
-	print_string("Character:[%c]\n", 'H');
-	print_string("String:[%s]\n", "I am a string !");
-	print_string("Percent:[%%]\n");
+	_printf("Let's try to printf a simple sentence.\n");
+	_printf("Character:[%c]\n", 'H');
+	_printf("String:[%s]\n", "I am a string !");
+	_printf("Percent:[%%]\n");
 	return (0);
 }

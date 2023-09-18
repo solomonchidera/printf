@@ -1,18 +1,18 @@
 #include "main.h"
 
 /**
- * print_string - a function that will imitate the work
+ * _printf - a function that will imitate the work
  * of printf itself
  * @format: an argument accepted by the user as a const char of string
  * Return: int
  */
 
-int print_string(const char *format, ...)
+int _printf(const char *format, ...)
 {
+	va_list(arg);
 	unsigned int i, countr, moon;
 
 	countr = 0;
-	va_list(arg);
 	va_start(arg, format);
 
 	for (i = 0 ; format[i] != '\0' ; i++)
@@ -21,18 +21,18 @@ int print_string(const char *format, ...)
 		{
 			putcar(format[i]);
 		}
-		else if (format[i++] == 'c')
+		else if (format[i + 1] == 'c')
 		{
 			putcar(va_arg(arg, int));
 			i++;
 		}
-		else if (format[i++] == 's')
+		else if (format[i + 1] == 's')
 		{
-			moon = putcar(va_arg(arg, int));
+			moon = _puts(va_arg(arg, char *));
 			i++;
 			countr += (moon - 1);
 		}
-		else if (format[i++] == '%')
+		else if (format[i + 1] == '%')
 			putcar('%');
 		countr += 1;
 	}
