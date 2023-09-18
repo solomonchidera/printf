@@ -7,6 +7,7 @@
 #include <unistd.h>
 
 int putcar(char c);
-int print_string(const char *format, ...);
+int _printf(const char *format, ...);
+int _puts(char *c);
 
 #endif
