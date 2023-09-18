@@ -19,7 +19,7 @@ int percent_print(const char *format, ...)
 
 	va_start(args, format);
 
-	if (format == "%%")
+	if (*format == "%%")
 		putchar(37 + '0');
 	else
 	{
