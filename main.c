@@ -42,6 +42,7 @@ int main(void)
     printf("Unknown:[%r]\n");
     return (0);
 }
+<<<<<<< HEAD
 alex@ubuntu:~/c/printf$ gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c
 alex@ubuntu:~/c/printf$ ./printf
 Let's try to printf a simple sentence.
@@ -68,3 +69,5 @@ Len:[12]
 Len:[12]
 Unknown:[%r]
 Unknown:[%r]
+=======
+>>>>>>> 485403dbce687e37f8e7844a42b644283c891782
