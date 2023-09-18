@@ -7,6 +7,6 @@
  */
 void _printf_c(int c, int *char_count)
 {
-    putchar(c);
-    (*char_count)++;
+	_putchar(c);
+	(*char_count)++;
 }

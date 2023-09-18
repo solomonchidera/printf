@@ -6,10 +6,10 @@
  */
 void _printf_s(const char *s, int *char_count)
 {
-    while (*s)
-    {
-        putchar(*s);
-        (*char_count)++;
-        s++;
-    }
+	while (*s)
+	{
+		_putchar(*s);
+		(*char_count)++;
+		s++;
+	}
 }
