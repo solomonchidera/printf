@@ -5,15 +5,10 @@
 #include <stdlib.h>
 #include <stdarg.h>
 #include <unistd.h>
-
+void _printf_s(const char *s, int *char_count);
+void _printf_c(int c, int *char_count);
 int _printf(const char *format, ...);
 int _puts(char *c);
 int putcar(char c);
-<<<<<<< HEAD
-int _printf(const char *format, ...);
-int _puts(char *c);
-=======
-
->>>>>>> 913b8cf29bb4a5aad5446fa85936bb34b9e057d8
 
 #endif
