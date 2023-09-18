@@ -16,7 +16,7 @@ int _puts(char *c)
 	{
 		for (countr = 0 ; c[countr] != '\0' ; countr++)
 		{
-			putcar(c[countr]);
+			_putchar(c[countr]);
 		}
 	}
 	return (countr);
