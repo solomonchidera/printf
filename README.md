@@ -7,4 +7,4 @@ more details coming soon...
 
 1. **[%s]**: string format specifier.
 2. **[%c]**: character format specifier.
-3. **[%d]**: integer format specifier.
+3. **[%d]**: signed decimal integer format specifier.
