@@ -6,6 +6,7 @@
  *@n: the number
  *@newdigit: the number of digits that will be has the new number
  *@base: the new base
+ *
  *Return: the number of characters printed
  *On error, -1 is returned, and errno is set appropriately.
  */
