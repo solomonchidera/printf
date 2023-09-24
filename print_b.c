@@ -18,7 +18,7 @@ int base_change_2(unsigned int n, int newdigit, unsigned int base)
 	if (n / base == 0)
 	{
 		_putchar(n % base + '0');
-		return (contador + 1);
+		return (newdigit + 1);
 	}
 	else
 	{
