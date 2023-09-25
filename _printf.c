@@ -16,6 +16,7 @@ int (*get_spec(const char *format))(va_list)
 		{"i", print_i},
 		{"d", print_d},
 		{"b", print_b},
+		{"o", print_o},
 		{NULL, NULL}
 	};
 	int i;
